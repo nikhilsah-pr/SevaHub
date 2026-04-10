@@ -36,7 +36,7 @@ export default function Register({ setUser }) {
         <div className="auth-card">
           <div className="auth-header">
             <div className="auth-logo">
-              🙏 <span>SevaHub</span>
+              S · <span>SevaHub</span>
             </div>
             <h1 className="auth-title">Create Account</h1>
             <p className="auth-subtitle">Join 50,000+ users discovering local services</p>

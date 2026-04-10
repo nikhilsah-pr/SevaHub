@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <div className="footer-brand-name">
-              🙏 <span>SevaHub</span>
+              <span>SevaHub</span>
             </div>
             <p className="footer-brand-desc">
               India's most trusted hyper-local services platform. Connecting you
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 SevaHub. Made with ❤️ in India</span>
+          <span>© 2026 SevaHub. All rights reserved.</span>
           <div className="footer-social">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FiInstagram /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FiTwitter /></a>

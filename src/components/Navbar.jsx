@@ -30,7 +30,7 @@ export default function Navbar({ user, setUser }) {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo">
-          <div className="logo-icon">🙏</div>
+          <div className="logo-icon">S</div>
           <span>SevaHub</span>
         </Link>
 
@@ -50,7 +50,7 @@ export default function Navbar({ user, setUser }) {
             Services
           </Link>
           <Link to="/about" className={`navbar-link ${isActive('/about') ? 'active' : ''}`}>
-            About Us
+            About
           </Link>
           <Link to="/contact" className={`navbar-link ${isActive('/contact') ? 'active' : ''}`}>
             Contact
@@ -71,7 +71,7 @@ export default function Navbar({ user, setUser }) {
                 to="/dashboard"
                 className={`navbar-link navbar-user-link ${isActive('/dashboard') ? 'active' : ''}`}
               >
-                <FiUser size={15} />
+                <FiUser size={14} />
                 <span>{user.name}</span>
               </Link>
               <button className="navbar-btn navbar-btn-outline" onClick={handleLogout}>

@@ -153,7 +153,7 @@ export default function ServiceDetails({ user, bookings }) {
                   Reviews ({reviews.length})
                 </h2>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <FiStar fill="#F39C12" stroke="none" size={20} />
+                  <FiStar fill="#F59E0B" stroke="none" size={20} />
                   <span style={{ fontSize: '1.25rem', fontWeight: 700 }}>{service.rating}</span>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export default function ServiceDetails({ user, bookings }) {
                     {[1, 2, 3, 4, 5].map((star) => (
                       <FiStar
                         key={star}
-                        fill={star <= review.rating ? '#F39C12' : 'none'}
+                        fill={star <= review.rating ? '#F59E0B' : 'none'}
                         stroke={star <= review.rating ? 'none' : '#DDD'}
                         size={16}
                       />
@@ -217,7 +217,7 @@ export default function ServiceDetails({ user, bookings }) {
                 </div>
               ) : (
                 <div style={{ padding: '24px', textAlign: 'center', color: '#888', fontSize: '0.9rem', background: '#f8f8f8', borderRadius: '12px', marginTop: '16px' }}>
-                  🔒 <Link to="/login" style={{ color: '#FF9933', fontWeight: 600 }}>Sign in</Link> to leave a review
+                  🔒 <Link to="/login" style={{ color: 'var(--text-accent)', fontWeight: 600 }}>Sign in</Link> to leave a review
                 </div>
               )}
             </div>
@@ -235,7 +235,7 @@ export default function ServiceDetails({ user, bookings }) {
                   {[1, 2, 3, 4, 5].map((star) => (
                     <FiStar
                       key={star}
-                      fill={star <= Math.round(service.rating) ? '#F39C12' : 'none'}
+                      fill={star <= Math.round(service.rating) ? '#F59E0B' : 'none'}
                       stroke={star <= Math.round(service.rating) ? 'none' : '#DDD'}
                       size={16}
                     />

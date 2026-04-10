@@ -303,3 +303,26 @@ export const adminProviders = [
   { id: 105, name: 'Ramu K.', service: 'Painter', phone: '+91 55443 32211', area: 'Indiranagar', status: 'approved', applied: '2026-03-20' },
   { id: 106, name: 'Bhavna P.', service: 'Cleaning', phone: '+91 44332 21100', area: 'Electronic City', status: 'rejected', applied: '2026-03-18' },
 ];
+
+export const defaultLocations = [
+  'Koramangala',
+  'Indiranagar',
+  'HSR Layout',
+  'Whitefield',
+  'Electronic City',
+  'JP Nagar',
+  'Jayanagar',
+  'BTM Layout',
+  'Marathahalli',
+  'Hennur Road',
+  'Kalyan Nagar',
+  'MG Road',
+  'Brigade Road',
+  'Church Street',
+  'Banashankari',
+  'Rajajinagar',
+  'Malleshwaram',
+  'Yelahanka',
+  'Hebbal',
+  'Sarjapur Road',
+];

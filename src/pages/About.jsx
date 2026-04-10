@@ -12,7 +12,7 @@ export default function About() {
       <section className="about-hero">
         <div className="container">
           <div className="about-hero-content animate-fade-in">
-            <div className="hero-badge">🙏 Our Story</div>
+            <div className="hero-badge">Our Story</div>
             <h1 className="about-hero-title">
               Empowering India's <span className="highlight">Local Service Economy</span>
             </h1>
@@ -71,37 +71,37 @@ export default function About() {
                 icon: <FiShield />,
                 title: 'Verified Professionals',
                 desc: 'Every service provider undergoes thorough background verification and skill assessment before joining the platform.',
-                color: '#27AE60',
+                color: '#22C55E',
               },
               {
                 icon: <FiMapPin />,
                 title: 'Hyper-Local Discovery',
                 desc: 'Find services within your neighbourhood. From electricians next door to tutors around the corner.',
-                color: '#FF9933',
+                color: '#4A6CF7',
               },
               {
                 icon: <FiStar />,
                 title: 'Real Reviews',
                 desc: 'Genuine ratings from real customers. No fake reviews, no paid promotions — just honest feedback.',
-                color: '#F39C12',
+                color: '#F59E0B',
               },
               {
                 icon: <FiCheckCircle />,
                 title: 'Instant Booking',
                 desc: 'Book services instantly with transparent pricing, available time slots, and real-time confirmation.',
-                color: '#2196F3',
+                color: '#3B82F6',
               },
               {
                 icon: <FiUsers />,
                 title: '50,000+ Users',
                 desc: 'Trusted by families and businesses across 35+ cities in India and growing rapidly every day.',
-                color: '#E91E63',
+                color: '#8B5CF6',
               },
               {
                 icon: <FiAward />,
                 title: 'Quality Guarantee',
                 desc: 'Not satisfied? We offer full refunds and re-service guarantees to ensure your complete satisfaction.',
-                color: '#9C27B0',
+                color: '#EC4899',
               },
             ].map((item, i) => (
               <div

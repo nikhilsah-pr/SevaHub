@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FiSearch } from 'react-icons/fi';
-import { FiArrowRight } from 'react-icons/fi';
+import { FiSearch, FiArrowRight } from 'react-icons/fi';
 import ServiceCard from '../components/ServiceCard';
 import Footer from '../components/Footer';
 import { categories, services } from '../data/services';
@@ -26,7 +25,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-badge">🇮🇳 Trusted by 50,000+ users across India</div>
+          <div className="hero-badge">Trusted by 50,000+ users across India</div>
           <h1 className="hero-title">
             Find <span className="highlight">Trusted Local</span><br />
             Services Near You
@@ -88,10 +87,7 @@ export default function Home() {
                 key={cat.id}
                 className={`category-card animate-fade-in animate-delay-${(i % 4) + 1}`}
               >
-                <div
-                  className="category-icon"
-                  style={{ background: `${cat.color}15` }}
-                >
+                <div className="category-icon">
                   {cat.icon}
                 </div>
                 <span className="category-name">{cat.name}</span>
@@ -111,7 +107,7 @@ export default function Home() {
                 Top-rated professionals handpicked for you
               </p>
             </div>
-            <Link to="/services" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#FF9933', fontWeight: 600, fontSize: '0.9rem' }}>
+            <Link to="/services" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--text-secondary)', fontWeight: 600, fontSize: '0.88rem' }}>
               View All <FiArrowRight />
             </Link>
           </div>
@@ -124,11 +120,11 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section style={{ padding: '64px 0', background: '#FFF' }}>
+      <section style={{ padding: '80px 0', background: 'var(--bg-secondary)' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 className="section-title">How It Works</h2>
           <p className="section-subtitle">Book a service in 3 simple steps</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '32px', marginTop: '16px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px', marginTop: '16px' }}>
             {[
               { step: '01', icon: '🔍', title: 'Search', desc: 'Find the service you need from 100+ categories in your area' },
               { step: '02', icon: '📋', title: 'Compare & Book', desc: 'Compare ratings, reviews, prices & book your preferred professional' },
@@ -139,23 +135,24 @@ export default function Home() {
                 className="animate-fade-in"
                 style={{
                   padding: '32px 24px',
-                  borderRadius: '16px',
+                  borderRadius: '12px',
                   background: 'var(--bg-primary)',
-                  transition: 'transform 0.3s, box-shadow 0.3s',
+                  border: '1px solid var(--border-light)',
+                  transition: 'transform 0.25s, box-shadow 0.25s',
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-6px)';
-                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(255,153,51,0.15)';
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.06)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)';
                   e.currentTarget.style.boxShadow = 'none';
                 }}
               >
-                <div style={{ fontSize: '3rem', marginBottom: '16px' }}>{item.icon}</div>
-                <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#FF9933', marginBottom: '8px' }}>STEP {item.step}</div>
-                <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '8px' }}>{item.title}</h3>
-                <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.6 }}>{item.desc}</p>
+                <div style={{ fontSize: '2.5rem', marginBottom: '16px' }}>{item.icon}</div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '8px', letterSpacing: '0.5px' }}>STEP {item.step}</div>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '8px', letterSpacing: '-0.01em' }}>{item.title}</h3>
+                <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>

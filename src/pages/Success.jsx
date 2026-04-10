@@ -61,7 +61,7 @@ export default function Success() {
           </div>
           <div className="success-detail-row">
             <span className="success-detail-label">Amount</span>
-            <span className="success-detail-value" style={{ color: '#FF9933' }}>₹{booking.price}</span>
+            <span className="success-detail-value" style={{ fontWeight: 700 }}>₹{booking.price}</span>
           </div>
           <div className="success-detail-row">
             <span className="success-detail-label">Booking ID</span>
